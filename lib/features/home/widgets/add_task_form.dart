@@ -5,7 +5,7 @@ import 'package:todo_app/core/theming/styles.dart';
 import 'package:todo_app/core/widgets/custom_botton.dart';
 import 'package:todo_app/core/widgets/custom_text_form_field.dart';
 import 'package:todo_app/features/home/cubits/add_task_cubit/add_task_cubit.dart';
-import 'package:todo_app/features/home/data/model/task_model.dart';
+import 'package:todo_app/features/home/data/models/task_model.dart';
 
 class AddTaskForm extends StatefulWidget {
   const AddTaskForm({super.key});
@@ -99,8 +99,8 @@ class _AddTaskFormState extends State<AddTaskForm> {
                       onPressed: () {
                         if (formKey.currentState!.validate()) {
                           formKey.currentState!.save();
-                          TaskModel taskModel =
-                              TaskModel(title: title!, date: date!);
+                          TaskModel taskModel = TaskModel(
+                              title: title!, date: date!, isSynced: false);
                           BlocProvider.of<AddTaskCubit>(context)
                               .addTask(taskModel);
                         } else {

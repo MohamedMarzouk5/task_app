@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:todo_app/features/home/cubits/add_task_cubit/add_task_cubit.dart';
 import 'package:todo_app/features/home/cubits/tasks_cubit/tasks_cubit.dart';
-import 'package:todo_app/features/home/data/model/task_modl.dart';
+import 'package:todo_app/features/home/data/models/task_modl.dart';
 import 'package:todo_app/features/home/widgets/add_task_form.dart';
 
 Future<void> bottomSheet(BuildContext context) {

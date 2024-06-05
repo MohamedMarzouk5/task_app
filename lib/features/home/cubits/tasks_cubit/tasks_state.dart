@@ -14,3 +14,11 @@ final class TaskFailure extends TasksState {
 
   TaskFailure(this.errMassage);
 }
+
+class ConnectedState extends TasksState {}
+
+class NotConnectedState extends TasksState {
+  // final String message;
+
+  // NotConnectedState({required this.message});
+}

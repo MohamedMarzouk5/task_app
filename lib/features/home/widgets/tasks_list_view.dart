@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/core/theming/styles.dart';
 import 'package:todo_app/features/home/cubits/tasks_cubit/tasks_cubit.dart';
 import 'package:todo_app/features/home/cubits/tasks_cubit/tasks_state.dart';
-import 'package:todo_app/features/home/data/model/task_model.dart';
+import 'package:todo_app/features/home/data/models/task_model.dart';
 import 'package:todo_app/features/home/widgets/task_item_list_view.dart';
 
 class TasksListView extends StatefulWidget {

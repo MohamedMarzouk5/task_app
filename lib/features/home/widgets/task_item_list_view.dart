@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/core/theming/colors.dart';
 import 'package:todo_app/core/theming/styles.dart';
-import 'package:todo_app/features/home/data/model/task_model.dart';
+import 'package:todo_app/features/home/data/models/task_model.dart';
 
 class TaskItemListView extends StatelessWidget {
   final TaskModel task;

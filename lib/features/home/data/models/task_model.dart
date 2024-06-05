@@ -4,14 +4,26 @@ part 'task_model.g.dart';
 @HiveType(typeId: 0)
 class TaskModel extends HiveObject {
   @HiveField(0)
-  final String title;
+  String title;
   @HiveField(1)
-  final String date;
+  String date;
   @HiveField(2)
-  bool? isSynced = false;
+  bool isSynced;
   TaskModel({
     required this.title,
     required this.date,
-    this.isSynced,
+    required this.isSynced,
   });
+
+  TaskModel copyWith({
+    String? title,
+    String? date,
+    bool? isSynced,
+  }) {
+    return TaskModel(
+      title: title ?? this.title,
+      date: date ?? this.title,
+      isSynced: isSynced ?? this.isSynced,
+    );
+  }
 }

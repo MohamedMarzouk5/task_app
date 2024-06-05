@@ -19,7 +19,7 @@ class TaskModelAdapter extends TypeAdapter<TaskModel> {
     return TaskModel(
       title: fields[0] as String,
       date: fields[1] as String,
-      isSynced: fields[2] as bool?,
+      isSynced: fields[2] as bool,
     );
   }
 

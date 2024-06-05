@@ -1,6 +1,6 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:todo_app/features/home/data/model/task_modl.dart';
+import 'package:todo_app/features/home/data/models/task_modl.dart';
 
 class ProductDatabaseHelper {
   final String tableTodo = 'todo';
