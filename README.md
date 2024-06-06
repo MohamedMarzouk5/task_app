@@ -1,4 +1,4 @@
- Add Task & edit and delete Task.
+ Add & edit and delete Task.
  
  Firebase  backend
  
